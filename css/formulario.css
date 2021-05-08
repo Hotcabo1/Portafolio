@@ -1,0 +1,197 @@
+/* Importación de fuentes de google fonts */ 
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+:root{
+    --blanco:#f3f3f3;
+    --negro:#000;
+}
+
+body{
+	height: 100%; 
+	font-family: 'Noto Sans', sans-serif;
+    background-color: var(--blanco);
+}
+
+.contact_form{	
+	width: 460px; 
+    height: auto;
+    margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    padding-left: 30px; 
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #444eab; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #444eab;  
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+ 	 display: block; 
+	float: center; 	
+}
+
+
+button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: #ab4444; 
+	border-color: #ab4444; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+	color: #fff; 
+}
+
+
+span{
+	color: #444eab;  
+}
+img{
+
+	width: 50px; 
+	height: 280px;
+	position:static;
+}
+
+.aviso{
+	font-size: 13px;  
+	color: #ab4444;   
+}
+
+
+h1{
+	font-size: 39px;  
+	text-align: center; 
+	padding-bottom: 20px; 
+	color: #ab4444;  
+}
+
+
+h3{
+	font-size: 16px; 
+	padding-bottom: 30px;
+	color: #0e0e0e;   
+}
+
+
+p{
+	font-size: 14px; 
+	color: #0e0e0e; 
+}
+
+
+header{
+    padding: 40px 0;
+}
+
+header .logo{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header .logo p{
+    color: #868484;
+}
+
+header form{ /* Diseño en la barra de busqueda */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+header .barra-busqueda{
+    width: 70%;
+    height: 40px;
+    line-height: 40px;
+    background:#fff;
+    padding: 0 20px; /* arriba abajo 0 - izquierda derecha 20px*/
+    border-radius: 100px;
+    border: none; /* Sin bordes*/
+    text-align: center;
+    font-size: 16px;
+}
+
+header .categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header .categorias a{
+    color: #9b9b9b;
+    margin: 10px 20px; /*Separación*/
+    font-size: 18px;
+    font-weight: 700;
+}
+
+header .categorias a.activo{
+    color: #000;
+}
+
+
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #ab4444; 
+}
+
+
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #c24c4c; 
+}
