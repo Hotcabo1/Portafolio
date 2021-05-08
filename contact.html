@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap">
+
+    <link rel="stylesheet" href="http://localhost:8080/portafolio/css/normalize.css">
+    <link rel="stylesheet" href="http://localhost:8080/portafolio/css/formulario.css">
+
+    <title>Contacto</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                    <h1>Carlos Cera Vargas</h1>
+                    <p>Desarrollador Web</p>
+            </div>
+                <form action="">
+                    <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar...">
+                </form>
+                <div class="categorias" id="categorias">
+                        <a href="http://localhost:8080/portafolio/index.html" >Inicio</a>
+                        <a href="http://localhost:8080/portafolio/proyectos.html">Proyectos</a>
+                        <a href="http://localhost:8080/portafolio/contact.html" class="activo">Contacto</a>
+                    </nav>
+                </div>
+        </header>
+    </div>
+
+	<div class="contact_form">
+
+		<div class="formulario">			
+                <h1>Formulario de contacto</h1>
+                <p></p>
+				<h3>Si deseas hablar conmigo, mandame un mensaje en este formulario.</h3>
+				<img class="contenedor" src="http://localhost:8080/portafolio/img/logo.png" alt="logo">
+
+
+					<form action="submeter-formulario.php" method="post">			
+                        
+								<p>
+									<label for="nombre" class="colocar_nombre">Nombre
+										<span class="obligatorio">*</span>
+									</label>
+										<input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+								</p>
+							
+								<p>
+									<label for="email" class="colocar_email">Email
+										<span class="obligatorio">*</span>
+									</label>
+										<input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+								</p>
+						
+								<p>
+									<label for="telefone" class="colocar_telefono">Teléfono
+									</label>
+										<input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+								</p>	
+							
+								<p>
+									<label for="mensaje" class="colocar_mensaje">Mensaje
+										<span class="obligatorio"> * </span>
+									</label>                     
+                               		  <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                               	</p>	  								
+							
+								<button type="submit" name="enviar_formulario" id="enviar">
+									
+									<p>Enviar</p>
+								
+								</button>
+
+								<p class="aviso">
+									<span class="obligatorio"> * </span>los campos son obligatorios.
+								</p>		
+					</form>
+		</div>	
+	</div>
+
+
+
+
+</body>
+
+</html>
