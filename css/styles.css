@@ -12,230 +12,135 @@
 body {
     background-color: var(--blanco);
     font-family: 'Open Sans',   sans-serif;
+    overflow-x: hidden;
 }
 
 a{
     text-decoration: none;
 }
 
-.contenedor{
-    width: 90%;
-    max-width: 800px;
-    margin: auto;
+
+
+/* S C R O L L */
+
+.fondo-estatico{
+    background-image: url("https://4topiso.com/wp-content/uploads/2020/03/lenguaje_portada.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+/* S C R O L L */
+
+/* F O O T E R */
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700);
+
+img {
+   max-width:100%;
+}
+
+.no-padding {
+ padding:0!important
+}
+.go_top {
+ line-height:40px;
+ cursor:pointer;
+ width:40px;
+ background:#5867dd;
+ color:#fff;
+ position:fixed;
+ -webkit-box-shadow:0 4px 4px rgba(0,0,0,.1);
+ box-shadow:0 4px 4px rgba(0,0,0,.1);
+ -webkit-border-radius:50%;
+ border-radius:50%;
+ right:-webkit-calc((100% - 1140px)/ 2);
+ right:calc((100% - 1140px)/ 2);
+ z-index:111;
+ bottom:80px;
+ text-align:center
+}
+.go_top span {
+ display:inline-block
+}
+.footer-big {
+ padding:105px 0 65px 0
+}
+.footer-big .footer-widget {
+ margin-bottom:40px
+}
+.footer--light {
+ background:#e7e8ed
+}
+.footer-big .footer-menu ul li a,.footer-big p,.footer-big ul li {
+ color:#898b96
+}
+.footer-menu {
+ padding-left:48px
+}
+.footer-menu ul li a {
+ font-size:15px;
+ line-height:32px;
+ -webkit-transition:.3s;
+ -o-transition:.3s;
+ transition:.3s
+}
+.footer-menu ul li a:hover {
+ color:#5867dd
+}
+.footer-menu--1 {
+ width:100%
+}
+.footer-widget-title {
+ line-height:42px;
+ margin-bottom:10px;
+ font-size:18px
+}
+.mini-footer {
+ background:#192027;
+ text-align:center;
+ padding:32px 0
+}
+.mini-footer p {
+ margin:0;
+ line-height:26px;
+ font-size:15px;
+ color:#999
+}
+.mini-footer p a {
+ color:#5867dd
+}
+.mini-footer p a:hover {
+ color:#34bfa3
+}
+.widget-about img {
+ display:block;
+ margin-bottom:30px
+}
+.widget-about p {
+ font-weight:400
+}
+.widget-about .contact-details {
+ margin:30px 0 0 0
+}
+.widget-about .contact-details li {
+ margin-bottom:10px
+}
+.widget-about .contact-details li:last-child {
+ margin-bottom:0
+}
+.widget-about .contact-details li span {
+ padding-right:12px
+}
+.widget-about .contact-details li a {
+ color:#5867dd
+}
+@media (max-width:991px) {
+ .footer-menu {
+  padding-left:0
+ }
 }
 
 
-/* ----------------------*/
-/* ------Header---------*/
-/* --------------------*/
 
-header{
-    padding: 40px 0;
-}
-
-header .logo{
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-header .logo p{
-    color: #868484;
-}
-
-header form{ /* Diseño en la barra de busqueda */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-header .barra-busqueda{
-    width: 70%;
-    height: 40px;
-    line-height: 40px;
-    background:#fff;
-    padding: 0 20px; /* arriba abajo 0 - izquierda derecha 20px*/
-    border-radius: 100px;
-    border: none; /* Sin bordes*/
-    text-align: center;
-    font-size: 16px;
-}
-
-h1{
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-    color: #444eab; 
-    padding: 0 20px; /* arriba abajo 0 - izquierda derecha 20px*/
-    border-radius: 100px;
-    border: none; /* Sin bordes*/
-    text-align: center;
-    font-size: 32px;
-}
-
-p{
-    font-weight: bolder;
-    font-size: 16px;
-}
-
-header .categorias {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-header .categorias a{
-    color: #9b9b9b;
-    margin: 10px 20px; /*Separación*/
-    font-size: 18px;
-    font-weight: 700;
-}
-
-header .categorias a.activo{
-    color: #000;
-}
-/* ----------------------*/
-/* --------Body---------*/
-/* --------------------*/
-
-.Fondo__margen{
-    background-color: rgb(228, 229, 231);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 3rem;
-}
-
-
-/* ----------------------*/
-/* --------Grid---------*/
-/* --------------------*/
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    display: flex;
-}
-
-
-
-/* ----------------------*/
-/* -------Tablas---------*/
-/* --------------------*/
-
-
-table {     
-    font-family: "Lucida Sans Unicode", "Lucida Grande", 
-    Sans-Serif;
-    font-size: 12px;    
-    margin: 15px;     
-    width: 480px; text-align: left;    
-    border-collapse: collapse; 
-}
-
-th {     
-    font-size: 2rem;     
-    font-weight: normal;     
-    padding: 8px;     
-    background: #b9c9fe;
-    border-top: 4px solid #aabcfe;    
-    border-bottom: 1px solid #fff; 
-    color: rgb(0, 80, 241); 
-}
-
-td {   
-    font-size: 1.5rem;
-     padding: 8px;
-     background: #e8edff;     
-     border-bottom: 1px solid #fff;
-    color: rgb(123, 123, 165);    border-top: 1px solid transparent;
-}
-
-tr:hover td { 
-    background: #d0dafd; 
-    color: rgb(66, 51, 153); 
-}
-/* ----------------------*/
-/* ----Body-Idiomas-----*/
-/* --------------------*/
-
-.bienvenida_idiomas{
-    text-align: left;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 0rem 2rem 0rem 2rem;
-}
- 
-.bienvenida__experiencias{
-    background-color: white;
-    border-radius: 2rem;
-    margin: 20px;
-    padding: 2.1rem;
-    width: 150%;
-}
-
-
-.bienvenida__experiencias p{
-    margin: 10px;
-    padding: 20px;
-    width: 100%;
-    text-align: justify;
-}
-
-.bienvenida__experiencias h2{
-    background-color: whitesmoke;
-    padding: 0.3rem 1rem;
-    text-align: center;
-}
-
-.bienvenida__experiencias h3{
-    background-color: rgb(255, 255, 255);
-    margin: 0.2rem;
-    padding: 0.3rem;
-    text-align: left;
-}
-
-
-.bienvenida__habilidades{
-    border-radius: 2rem;
-    background-color: white;
-    margin: 15px;
-    padding: 20px;
-    border-radius: 0rem 4rem 0rem 4rem;
-    width: auto;
-}
-
-.bienvenida__habilidades h2{
-    text-align: center;
-    font-weight: bolder;
-}
-
-.tabla__lenguajes{
-    text-align: left;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 0rem 2rem 0rem 2rem;
-}
-
-
-/* ----------------------*/
-/* ------Footer---------*/
-/* --------------------*/
-
-.footer{
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-    background:rgb(61, 61, 61);
-    padding: 0 20px; /* arriba abajo 0 - izquierda derecha 20px*/
-    border-radius: 2rem;
-    border: none; /* Sin bordes*/
-    text-align:center;
-    font-size: 1.1rem;
-    padding: 0px 25px;
-    margin-bottom: 20px;
-}
-
-.footer__texto{
-  color: var(--blanco);
-}
+/* F O O T E R */
