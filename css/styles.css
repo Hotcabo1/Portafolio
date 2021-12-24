@@ -30,6 +30,14 @@ a{
     background-attachment: fixed;
     background-size: cover;
   }
+.fondo-estatico1{
+    /* background-image: url("https://www.computerworld.es/archivos/201811/espanol.jpg"); */
+    background-color: rgb(204, 216, 255);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+  }
 
 /* S C R O L L */
 
@@ -140,7 +148,17 @@ img {
   padding-left:0
  }
 }
-
-
-
 /* F O O T E R */
+
+
+.card-title{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color:rgb(0, 0, 0);
+}
+.title{
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: normal;
+    margin: 1rem;
+}
